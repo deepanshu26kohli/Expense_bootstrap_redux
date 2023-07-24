@@ -1,0 +1,22 @@
+.mynav{
+    background-color: aquamarine;
+}
+.logo{
+    color: blue;
+}
+@media only screen and (max-width: 850px) {
+   .logo{
+    font-size: 1.5rem;
+   }
+   .head-content{
+    font-size: 1rem;
+   }
+   .head-content-h6{
+    font-size: .5rem;
+   }
+}
+@media only screen and (max-width: 350px){
+    .logo{
+        font-size: 1rem;
+       } 
+}
