@@ -2,13 +2,21 @@
     background-color: bisque;
 } */
 .box-bal{
-    background-color: rgb(147, 208, 86);
+    background-color:rgb(212 235 189);
     border: .1rem solid green;
 }
 .box-inc{
-    background-color: #48ffff;
+    background-color: #b9ffff;
     border: .1rem solid rgb(0, 195, 255);
 }
 .box-exp{
-    background-color: rgb(192,196 ,186 );
+    background-color: rgb(255 184 184);
+     border: .1rem solid red;
 }
+@media only screen and (max-width: 1000px) {
+    .text {
+      font-size: 1rem;
+      padding: 0rem;
+    }
+    
+  }

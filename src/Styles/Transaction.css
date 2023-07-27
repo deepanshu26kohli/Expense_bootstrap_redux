@@ -1,0 +1,18 @@
+.myText{
+    font-size: .8rem;
+}
+@media only screen and (max-width: 1000px) {
+    .myText {
+      font-size: .6rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .myText {
+      font-size: .5rem;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .myText {
+      font-size: .2rem;
+    }
+  }
