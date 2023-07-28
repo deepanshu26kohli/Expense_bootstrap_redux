@@ -1,12 +1,13 @@
 import React from 'react'
 import "../Styles/Transaction.css"
-const Transaction = () => {
+const Transaction = (props) => {
     return (
         <>
             <div className="container  mt-5">
                 <div className="row justify-content-between ">
-                    <div className="col-12 col-md-4 col-lg-3  d-flex flex-column justify-content-center align-items-center border rounded p-3">
+                    <div className="col-12 col-md-4 col-lg-3 h-50 d-flex flex-column justify-content-center align-items-center border rounded p-3">
                         <h5>Add Transaction</h5>
+                        <button class=" m-3 btn-dark" onClick={() => { props.setHeaderModal(true) }} style={{ cursor: "pointer" }}>Add New Header</button>
                         <form>
                             <div class="form-group">
                                 <label for="lastName">Amount</label>
@@ -14,8 +15,7 @@ const Transaction = () => {
                             </div>
                             <div class="form-group">
                                 <label for="country">Header</label>
-                                <button type="submit" class="btn-sm m-3 btn-dark" data-toggle="modal" data-target="#exampleModalCenter" style={{ cursor: "pointer" }}>Add New Header</button>
-                                
+
                                 <select class="form-control" id="country">
                                     <option value="">Select Header</option>
                                     <option value="usa">Salary</option>
@@ -41,31 +41,105 @@ const Transaction = () => {
                             <button type="submit" class="btn btn-dark">Submit</button>
                         </form>
                     </div>
-                    <div className="col-12 col-md-7 col-lg-8 d-flex d-flex flex-column  align-items-center border rounded pt-3">
+                    <div className="col-12 col-md-8 col-lg-6 d-flex d-flex flex-column  align-items-center border rounded pt-3">
                         <h5>Transaction History</h5>
-                        <div className='row bg-dark text-light mt-2  py-1'>
-                            <div className='col px-lg-4 myText'>
-                                ID
-                            </div>
-                            <div className='col  px-lg-4  myText'>
-                                Header
-                            </div>
-                            <div className='col  px-lg-4 myText'>
-                                Type
-                            </div>
-                            <div className='col  px-lg-4 myText'>
-                                Date
-                            </div>
-                            <div className='col  px-lg-4 myText'>
-                                Amount
-                            </div>
-                            <div className='col  px-lg-4 myText'>
-                                Delete
-                            </div>
-                            <div className='col  px-lg-4 myText'>
-                                Update
-                            </div>
-                        </div>
+                        <table class="table">
+                            <thead className='table-dark '>
+                                <tr>
+                                    <th scope="col">Header</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Delete</th>
+                                    <th scope="col">Update</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Income</td>
+                                    <td>₹50000</td>
+                                    <td>28-07-23</td>
+                                    <td><button className='btn-dark'>Delete</button></td>
+                                    <td><button className='btn-dark'>Update</button></td>
+                                </tr>
+                                
+                               
+                            </tbody>
+                        </table>
 
 
                     </div>

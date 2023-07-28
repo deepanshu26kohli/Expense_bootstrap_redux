@@ -22,12 +22,12 @@ const Banner = () => {
                         <div className='box-inc rounded d-flex flex-row align-items-center p-3'>
                             <div className="ic">
                                 <span class="fa-stack fa-2x ">
-                                    <i class="fas fa-arrow-up fa-stack-2x  mx-3" style={{color:"#00aaff"}}></i>
+                                    <i class="fas fa-arrow-up fa-stack-1x  mx-3" style={{color:"#00aaff"}}></i>
                                     <i class="fas fa-coins" style={{color:"#00aaff"}}></i> 
                                 </span>
                             </div>
                             <div className="box-con d-flex align-items-center justify-content-center flex-column">
-                                <h4 className='text'>My Income</h4>
+                                <h5 className='text'>My Income</h5>
                                 <h5>₹0</h5>
                             </div>
                         </div>
@@ -37,14 +37,14 @@ const Banner = () => {
                             <div className="ic">
                                 <span class="fa-stack fa-2x">
 
-                                    <i class="fas fa-arrow-down fa-stack-2x  mx-3" style={{color:"#ff00008c"}}></i>
+                                    <i class="fas fa-arrow-down fa-stack-1x  mx-3" style={{color:"#ff00008c"}}></i>
                                     <i class="fas fa-coins" style={{color:"#ff00008c"}}></i> 
 
 
                                 </span>
                             </div>
                             <div className="box-con  d-flex align-items-center justify-content-center flex-column">
-                                <h4 className='text'>My Expense</h4>
+                                <h5 className='text'>My Expense</h5>
                                 <h5>₹0</h5>
                             </div>
                         </div>
