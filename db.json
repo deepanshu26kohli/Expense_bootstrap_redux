@@ -1,0 +1,18 @@
+{
+    "transactions":[
+        {
+            "amount" : 5000,
+            "type" : "Income",
+            "header" : "Salary",
+            "date" : "31-07-2023",
+            "note" : "lorem ipsum"
+        },
+        {
+            "amount" : 6000,
+            "type" : "Income",
+            "header" : "Sales",
+            "date" : "31-07-2023",
+            "note" : "lorem ipsum"
+        }
+    ]
+}

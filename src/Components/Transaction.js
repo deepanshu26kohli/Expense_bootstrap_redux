@@ -38,6 +38,10 @@ const Transaction = (props) => {
                                 <label for="birthdate">Date</label>
                                 <input type="date" class="form-control" id="birthdate" />
                             </div>
+                            <div class="form-group">
+                                <label for="exampleTextarea">Add Note here</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+                            </div>
                             <button type="submit" class="btn btn-dark">Submit</button>
                         </form>
                     </div>
@@ -52,7 +56,7 @@ const Transaction = (props) => {
                                     <th scope="col">Date</th>
                                     <th scope="col">Delete</th>
                                     <th scope="col">Update</th>
-                                    
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -136,8 +140,8 @@ const Transaction = (props) => {
                                     <td><button className='btn-dark'>Delete</button></td>
                                     <td><button className='btn-dark'>Update</button></td>
                                 </tr>
-                                
-                               
+
+
                             </tbody>
                         </table>
 

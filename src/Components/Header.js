@@ -10,7 +10,7 @@ const Header = () => {
                     </div>
                     <div className="col-6 col-lg-3 col-md-4 col-sm-4 col-xs-6   d-flex align-items-center justify-content-end">
                    
-                            <h4 className='head-content'>Hi,Deepanshu!<br/><h6 className='text-muted head-content-h6'>Welcome to Expense Manager</h6></h4>
+                            <h4 className='head-content'>Hi,User!<br/><h6 className='text-muted head-content-h6'>Welcome to Expense Manager</h6></h4>
                     </div>
                 </div>
             </div>

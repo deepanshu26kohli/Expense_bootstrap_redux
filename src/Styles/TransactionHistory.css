@@ -1,0 +1,15 @@
+.checkalltrans{
+  color:black; 
+  transition: all .5s ease-in-out;
+}
+.checkalltrans:hover{
+  color: gray;
+}
+.detail{
+  color: black;
+  text-decoration: underline;
+  transition: all .5s ease-in-out;
+}
+.detail:hover{
+  color: gray;
+}

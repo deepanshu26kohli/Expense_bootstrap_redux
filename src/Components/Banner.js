@@ -5,15 +5,15 @@ const Banner = () => {
         <>
             <div className="container banner mt-2">
                 <div className="row  ">
-                    <div className="col-lg-4 col-md-4 col-12 d-flex align-item-center justify-content-center p-3 rounded">
-                        <div className='rounded box-bal  d-flex flex-row align-items-center p-3'>
+                    <div className="col-lg-4 col-md-4 col-12  d-flex align-item-center justify-content-center  rounded">
+                        <div className='rounded  box-bal  d-flex flex-row align-items-center p-3'>
                             <div className="ic">
                                 <span class="fa-stack fa-2x">
                                     <i class="fas fa-wallet fa-stack-1x " style={{color:"#199719",fontSize:"2.5rem"}}></i>
                                 </span>
                             </div>
                             <div className="box-con  d-flex align-items-center justify-content-center flex-column">
-                                <h5 className='text'>My Balance</h5>
+                                <h5 className='text'>Balance</h5>
                                 <h5>₹0</h5>
                             </div>
                         </div>
@@ -27,7 +27,7 @@ const Banner = () => {
                                 </span>
                             </div>
                             <div className="box-con d-flex align-items-center justify-content-center flex-column">
-                                <h5 className='text'>My Income</h5>
+                                <h5 className='text'>Income</h5>
                                 <h5>₹0</h5>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const Banner = () => {
                                 </span>
                             </div>
                             <div className="box-con  d-flex align-items-center justify-content-center flex-column">
-                                <h5 className='text'>My Expense</h5>
+                                <h5 className='text'>Expense</h5>
                                 <h5>₹0</h5>
                             </div>
                         </div>
