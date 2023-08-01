@@ -5,7 +5,7 @@ const Banner = () => {
         <>
             <div className="container banner mt-2">
                 <div className="row  ">
-                    <div className="col-lg-4 col-md-4 col-12  d-flex align-item-center justify-content-center rounded">
+                    <div className="col-lg-4 col-md-4 col-12  d-flex align-item-center justify-content-center  rounded">
                         <div className='rounded  box-bal  d-flex flex-row align-items-center p-3'>
                             <div className="ic">
                                 <span class="fa-stack fa-2x">
