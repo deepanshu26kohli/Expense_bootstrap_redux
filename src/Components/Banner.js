@@ -13,12 +13,12 @@ const Banner = () => {
             var exp = 0
             for (let i = 0; i < Transactionresult.length; i++) {
                 if (Transactionresult[i].data.Type == "Income" || Transactionresult[i].data.Type == "Sale") {
-                    console.log(Transactionresult[i].data.Amount,Transactionresult[i].data.Type)
+                    // console.log(Transactionresult[i].data.Amount,Transactionresult[i].data.Type)
                     bal += parseInt(Transactionresult[i].data.Amount)
                     inc += parseInt(Transactionresult[i].data.Amount)
                 }
                 else if(Transactionresult[i].data.Type == "Expense" || Transactionresult[i].data.Type == "Purchase" || Transactionresult[i].data.Type == "Investment" )   {
-                    console.log(Transactionresult[i].data.Amount,Transactionresult[i].data.Type)
+                    // console.log(Transactionresult[i].data.Amount,Transactionresult[i].data.Type)
                     bal -= parseInt(Transactionresult[i].data.Amount)
                     exp += parseInt(Transactionresult[i].data.Amount)
                 }
