@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import "../Styles/HeaderModal.css"
+import { useDispatch } from 'react-redux';
+import { addHeader } from '../Redux/Action/HeaderAction';
 const HeaderModal = (props) => {
+    const formref = useRef(null)
+    const [header, setHeader] = useState("")
+    const dispatch = useDispatch()
+    function submitHeader(e) {
+        e.preventDefault()
+        let newHeader = {"Header":header}
+        setHeader("")
+        dispatch(addHeader(newHeader))
+        formref.current.reset();
+        alert("Header Added Successfully")
+    }
     return (
         <div className='box'>
             <div className='min-box  d-flex flex-column align-items-center justify-content-around   rounded '>
-                <button className="cross" onClick={()=>{props.setHeaderModal(false)}}>X</button>
-                <input type="text" placeholder='Enter Header' />
-                <button className='btn-dark'>Add Header</button>
-                <button className='btn-dark' onClick={()=>{props.setHeaderModal(false)}}>Cancel</button>
+                <button className="cross" onClick={() => { props.setHeaderModal(false) }}>X</button>
+                <form ref={formref}className=' d-flex flex-column align-items-center justify-content-around' onSubmit={submitHeader} >
+                    <input type="text" placeholder='Enter Header' onChange={(event) => { setHeader(event.target.value) }} />
+                    <button className='btn-dark mt-5' type='submit' >Add Header</button>
+                </form>
+                <button className='btn-dark' onClick={() => { props.setHeaderModal(false) }}>Cancel</button>
             </div>
         </div>
     )

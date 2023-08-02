@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import CheckAllTrans from './Components/CheckAllTrans';
-import Detail from './Components/Detail';
+import { Provider } from 'react-redux';
+import {store , persistor } from './Redux/Store/store';
+import { PersistGate } from 'redux-persist/integration/react';
+import { BrowserRouter, } from 'react-router-dom'
+persistor.persist();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-   <React.StrictMode>
-    <App/>
-  </React.StrictMode>
+  
+  <Provider store={store}>
+    <PersistGate  loading={null} persistor={persistor} onBeforeLift={() => {}}>
+      <App />
+    </PersistGate>
+  </Provider>
+  
   </BrowserRouter>
  
 );
