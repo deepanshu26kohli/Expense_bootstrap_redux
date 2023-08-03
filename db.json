@@ -1,414 +1,146 @@
 {
   "transactions": [
     {
-      "Amount": "50000",
+      "Amount": "60000",
       "Header": "Salary",
       "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "wee34trgyfhrythg",
+      "Date": "2023-08-03",
+      "Note": "weefef",
       "id": 1
-    },
-    {
-      "Amount": "4000",
-      "Header": "Friend",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "r5y7ugytfrfyu",
-      "id": 2
-    },
-    {
-      "Amount": "200",
-      "Header": "Friend",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "67yui",
-      "id": 3
-    },
-    {
-      "Amount": "50000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "ujytr4eyut65r",
-      "id": 4
-    },
-    {
-      "Amount": "2000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "5ghfghgjhdfg",
-      "id": 5
-    },
-    {
-      "Amount": "5000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "9o87i6y5t",
-      "id": 6
-    },
-    {
-      "Amount": "50000",
-      "Header": "Salary",
-      "Type": "",
-      "Date": "2023-08-02",
-      "Note": "fghjr6juytujk",
-      "id": 7
-    },
-    {
-      "Amount": "50000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "9u8iy65t",
-      "id": 8
-    },
-    {
-      "Amount": "2000",
-      "Header": "Movie",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "8756",
-      "id": 9
-    },
-    {
-      "Amount": "500",
-      "Header": "Movie",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "7u65tergf",
-      "id": 10
-    },
-    {
-      "Amount": "50000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "",
-      "Note": "56ghukjhgyfh",
-      "id": 11
-    },
-    {
-      "Amount": "50000",
-      "Header": "salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "uyth",
-      "id": 12
-    },
-    {
-      "Amount": "2000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "",
-      "id": 13
     },
     {
       "Amount": "3000",
       "Header": "Travel",
       "Type": "Expense",
-      "Date": "",
-      "Note": "",
-      "id": 14
-    },
-    {
-      "Amount": "500",
-      "Header": "salary",
-      "Type": "Income",
-      "Date": "",
-      "Note": "",
-      "id": 15
-    },
-    {
-      "Amount": "50000",
-      "Header": "salary",
-      "Type": "Income",
-      "Date": "",
-      "Note": "",
-      "id": 16
-    },
-    {
-      "Amount": "50000",
-      "Header": "sal",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "rtjgn",
-      "id": 17
-    },
-    {
-      "Amount": "2000",
-      "Header": "movie",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "6ytgh",
-      "id": 18
-    },
-    {
-      "Amount": "500",
-      "Header": "movie",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 19
-    },
-    {
-      "Amount": "800",
-      "Header": "movie",
-      "Type": "Expense",
-      "Date": "",
-      "Note": "",
-      "id": 20
-    },
-    {
-      "Amount": "1",
-      "Header": "sal",
-      "Type": "Income",
       "Date": "2023-08-03",
-      "Note": "uyjkj",
-      "id": 21
+      "Note": "efwvervsrvsr",
+      "id": 2
     },
     {
-      "Amount": "50",
-      "Header": "movie",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "t78io",
-      "id": 22
-    },
-    {
-      "Amount": "40000",
-      "Header": "sal",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 23
-    },
-    {
-      "Amount": "40000",
-      "Header": "sal",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 24
-    },
-    {
-      "Amount": "70000",
-      "Header": "sal",
-      "Type": "Income",
-      "Date": "2023-08-02T09:54:00.759Z",
-      "Note": "",
-      "id": 25
-    },
-    {
-      "Amount": "63983",
-      "Header": "sal",
-      "Type": "Income",
-      "Date": "2023-08-02T09:56:16.625Z",
-      "Note": "",
-      "id": 26
-    },
-    {
-      "Amount": "2589",
-      "Header": "sal",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 27
-    },
-    {
-      "Amount": "50000",
-      "Header": "salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 28
-    },
-    {
-      "Amount": "8000",
-      "Header": "mov",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 29
-    },
-    {
-      "Amount": "9000",
-      "Header": "mov",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 30
-    },
-    {
-      "Amount": "7000",
-      "Header": "mov",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 31
-    },
-    {
-      "Amount": "40000",
-      "Header": "salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "",
-      "id": 32
-    },
-    {
-      "Amount": "8000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "Trip to Goa",
-      "id": 33
-    },
-    {
-      "Amount": "50000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "kmf iof fodecm  zlc xdmvmv ml dflvm ",
-      "id": 34
-    },
-    {
-      "Amount": "4000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "dcccknsciowehuibcs cmcssewhiskkskjsbjbjsdvksbuuiubd",
-      "id": 35
-    },
-    {
-      "Amount": "20000",
+      "Amount": "1700",
       "Header": "Friend",
       "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "efd xgrvfdcedsxfredfrecdsx",
-      "id": 36
-    },
-    {
-      "Amount": "600",
-      "Header": "Movie",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "rdvddbftyukykughggh",
-      "id": 37
-    },
-    {
-      "Amount": "10000",
-      "Header": "Friend",
-      "Type": "Expense",
-      "Date": "2023-08-02",
-      "Note": "xcferfesfcsfwefwefw",
-      "id": 38
+      "Date": "2023-08-03",
+      "Note": "rege",
+      "id": 3
     },
     {
       "Amount": "55000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-02",
-      "Note": "gfjytnguykc klof;diiogdfndbknfk",
-      "id": 39
+      "Header": "Loan",
+      "Type": "Investment",
+      "Date": "2023-08-03",
+      "Note": "efvgerer",
+      "id": 4
     },
     {
-      "Amount": "5000",
+      "Amount": "60000",
+      "Header": "Salary",
+      "Type": "Income",
+      "Date": "2023-08-01",
+      "Note": "efrwfef",
+      "id": 5
+    },
+    {
+      "Amount": "4000",
+      "Header": "Friend",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "efrer",
+      "id": 6
+    },
+    {
+      "Amount": "10000",
       "Header": "Travel",
       "Type": "Expense",
-      "Date": "2023-08-02",
+      "Date": "2023-08-03",
       "Note": "Trip to Goa",
-      "id": 40
+      "id": 7
+    },
+    {
+      "Amount": "80000",
+      "Header": "Salary",
+      "Type": "Income",
+      "Date": "2023-08-03",
+      "Note": "xyz",
+      "id": 8
+    },
+    {
+      "Amount": "10000",
+      "Header": "Travel",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "Trip to Goa",
+      "id": 9
+    },
+    {
+      "Amount": "10000",
+      "Header": "Travel",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "Trip to Goa",
+      "id": 10
+    },
+    {
+      "Amount": "10000",
+      "Header": "Travel",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "Trip to Goa",
+      "id": 11
+    },
+    {
+      "Amount": "80000",
+      "Header": "Salary",
+      "Type": "Income",
+      "Date": "2023-08-03",
+      "Note": "xyz",
+      "id": 12
+    },
+    {
+      "Amount": "10000",
+      "Header": "Travel",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "Trip to Goa",
+      "id": 13
+    },
+    {
+      "Amount": "10000",
+      "Header": "Travel",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "Trip to Goa",
+      "id": 14
+    },
+    {
+      "Amount": "10000",
+      "Header": "Travel",
+      "Type": "Expense",
+      "Date": "2023-08-03",
+      "Note": "Trip to Goa",
+      "id": 15
     }
   ],
   "headers": [
     {
-      "Header": "Salary",
+      "Header": "Travel",
       "id": 1
     },
     {
-      "Header": "Movie",
+      "Header": "Salary",
       "id": 2
     },
     {
-      "Header": "Friend",
+      "Header": "Movie",
       "id": 3
     },
     {
-      "Header": "Salary",
+      "Header": "Friend",
       "id": 4
     },
     {
-      "Header": "Travel",
+      "Header": "Loan",
       "id": 5
-    },
-    {
-      "Header": "Salary",
-      "id": 6
-    },
-    {
-      "Header": "Movie",
-      "id": 7
-    },
-    {
-      "Header": "Salary",
-      "id": 8
-    },
-    {
-      "Header": "Movie",
-      "id": 9
-    },
-    {
-      "Header": "Salary",
-      "id": 10
-    },
-    {
-      "Header": "Movie",
-      "id": 11
-    },
-    {
-      "Header": "salary",
-      "id": 12
-    },
-    {
-      "Header": "Travel",
-      "id": 13
-    },
-    {
-      "Header": "sal",
-      "id": 14
-    },
-    {
-      "Header": "movie",
-      "id": 15
-    },
-    {
-      "Header": "salary",
-      "id": 16
-    },
-    {
-      "Header": "mov",
-      "id": 17
-    },
-    {
-      "Header": "Travel",
-      "id": 18
-    },
-    {
-      "Header": "Salary",
-      "id": 19
-    },
-    {
-      "Header": "Movie",
-      "id": 20
-    },
-    {
-      "Header": "Travel",
-      "id": 21
-    },
-    {
-      "Header": "Friend",
-      "id": 22
     }
   ]
 }

@@ -1,46 +1,14 @@
-// import React from 'react'
-// import { useSelector } from 'react-redux'
-// import "../Styles/checkalltrans.css"
-// const CheckAllTrans = () => {
-//   let Transactionresult = useSelector((state) => state.transactionData)
-//   return (
-//     <div className='mt-3 container'>
-//       <h3 className='text-center'>All Transactions</h3>
-//       <input type="text" placeholder='Search Transaction' />
-//       <div className='row  mt-3 '>
-//         {
-//           Transactionresult && Transactionresult.map((e, id) => {
-//             return <div key={id} className='col-md-4 col-12  d-flex flex-column '>
-//               <div className='border my-trans-card rounded m-3 p-3 d-flex flex-column align-items-start'>
-//                 <div><strong>Header: </strong><span>{e.data.Header}</span></div>
-//                 <div><strong>Amount: </strong><span>₹{e.data.Amount}</span></div>
-//                 <div><strong>Type: </strong><span>{e.data.Type}</span></div>
-//                 <div><strong>Date: </strong><span>{e.data.Date}</span></div>
-//                 <div><strong>Notes: </strong><span>{e.data.Note}</span></div>
-//               </div>
-//             </div>
-//           })
-//         }
-//       </div>
-//     </div>
-//   )
-// }
-// export default CheckAllTrans
-// CheckAllTrans.js
-
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMoreTransactions } from '../Redux/Action/InfiniteScrollAction';
-
+import '../Styles/checkalltrans.css'
 const CheckAllTrans = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-
   const transactionData = useSelector((state) => state.InfiniteScrollTransactionData);
   console.log("checkall",transactionData)
-
   const fetchMoreData = () => {
     if (!loading && hasMore) {
       setLoading(true);
@@ -56,7 +24,7 @@ const CheckAllTrans = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); 
+  }, [transactionData]); 
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -76,17 +44,17 @@ const CheckAllTrans = () => {
       <input type="text" placeholder='Search Transaction' />
       <div className='row mt-3'>
       {
-          transactionData && transactionData.map((e, id) => {
+          transactionData.length ? transactionData[0].data.reverse().map((e, id) => {
             return <div key={id} className='col-md-4 col-12  d-flex flex-column '>
               <div className='border my-trans-card rounded m-3 p-3 d-flex flex-column align-items-start'>
-                <div><strong>Header: </strong><span>{e.data.Header}</span></div>
-                <div><strong>Amount: </strong><span>₹{e.data.Amount}</span></div>
-                 <div><strong>Type: </strong><span>{e.data.Type}</span></div>
-                 <div><strong>Date: </strong><span>{e.data.Date}</span></div>
-                 <div><strong>Notes: </strong><span>{e.data.Note}</span></div>
+                <div><strong>Header: </strong><span>{e.Header}</span></div>
+                <div><strong>Amount: </strong><span>₹{e.Amount}</span></div>
+                 <div><strong>Type: </strong><span>{e.Type}</span></div>
+                 <div><strong>Date: </strong><span>{e.Date}</span></div>
+                 <div><strong>Notes: </strong><span>{e.Note}</span></div>
                </div>
-             </div>
-           })
+             </div> 
+           }): <p>No Transactions to show</p>
          }
       </div>
       {loading && <p>Loading...</p>}
