@@ -1,10 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMoreTransactions } from '../Redux/Action/InfiniteScrollAction';
 import '../Styles/checkalltrans.css'
+import { debounce } from 'lodash'
 const CheckAllTrans = () => {
+  const searchRef = useRef()
+  const dateRef = useRef()
+  const resetSearch = ()=>{
+    setSearch("")
+    setDateSearch("")
+    searchRef.current.value = ""
+    dateRef.current.value = ""
+  }
+  const handleSearch = (e) => {
+    debounce(() => { setSearch(e.target.value) }, 2000)()
+}
   const dispatch = useDispatch();
   const [search,setSearch] = useState("")
+  const [dateSearch,setDateSearch] = useState()
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,12 +34,13 @@ const CheckAllTrans = () => {
       setCurrentPage(prevPage => prevPage + 1);
       setLoading(false);
     }
+   
   };
   useEffect(()=>{
     if( search.length == 0 || search.length > 3){
-      dispatch(fetchMoreTransactions(currentPage,search)); 
+      dispatch(fetchMoreTransactions(currentPage,search,dateSearch)); 
     }
-  },[search])
+  },[search,dateSearch])
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -39,17 +53,19 @@ const CheckAllTrans = () => {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
     const distanceFromBottom = documentHeight - (scrollY + windowHeight);
-    const threshold = 200;
-
+    const threshold = 100;
     if (distanceFromBottom < threshold) {
       fetchMoreData();
     }
   };
-
   return (
     <div className='mt-3 container'>
       <h3 className='text-center'>All Transactions</h3>
-      <div className='d-flex justify-content-center mt-3'><input type="text" placeholder='Search Transaction' onChange={(event)=>{setSearch(event.target.value)}} /></div>
+      <div className='d-flex justify-content-around mt-3'>
+        <input ref={searchRef} type="text" placeholder='Search Transaction' onChange={handleSearch} />
+        <div><span>Search by Date: </span><input ref={dateRef} type="date" placeholder='Search by Date' onChange={(event)=>{setSearch(event.target.value)}} /></div>
+        <div><button onClick={()=>{resetSearch()}}>Reset Search</button></div>
+      </div>
     
       <div className='row mt-3'>
       {
@@ -67,7 +83,6 @@ const CheckAllTrans = () => {
          }
       </div>
       {loading && <p>Loading...</p>}
-      {!hasMore && <p>No more items to load.</p>}
     </div>
   );
 };

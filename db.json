@@ -1,137 +1,49 @@
 {
   "transactions": [
     {
-      "Amount": "60000",
+      "Amount": "80000",
       "Header": "Salary",
       "Type": "Income",
       "Date": "2023-08-03",
-      "Note": "weefef",
+      "Note": "asdfghjkl",
       "id": 1
     },
     {
-      "Amount": "3000",
-      "Header": "Travel",
+      "Amount": "500",
+      "Header": "Friend",
       "Type": "Expense",
       "Date": "2023-08-03",
-      "Note": "efwvervsrvsr",
+      "Note": "yuifvhukgui",
       "id": 2
     },
     {
-      "Amount": "1700",
-      "Header": "Friend",
+      "Amount": "1000",
+      "Header": "Movie",
       "Type": "Expense",
       "Date": "2023-08-03",
-      "Note": "rege",
+      "Note": "y6ju",
       "id": 3
     },
     {
-      "Amount": "55000",
-      "Header": "Loan",
-      "Type": "Investment",
-      "Date": "2023-08-03",
-      "Note": "efvgerer",
-      "id": 4
-    },
-    {
-      "Amount": "60000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-01",
-      "Note": "efrwfef",
-      "id": 5
-    },
-    {
-      "Amount": "4000",
+      "Amount": "5000",
       "Header": "Friend",
       "Type": "Expense",
       "Date": "2023-08-03",
-      "Note": "efrer",
-      "id": 6
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 7
-    },
-    {
-      "Amount": "80000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-03",
-      "Note": "xyz",
-      "id": 8
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 9
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 10
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 11
-    },
-    {
-      "Amount": "80000",
-      "Header": "Salary",
-      "Type": "Income",
-      "Date": "2023-08-03",
-      "Note": "xyz",
-      "id": 12
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 13
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 14
-    },
-    {
-      "Amount": "10000",
-      "Header": "Travel",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "Trip to Goa",
-      "id": 15
+      "Note": " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "id": 4
     }
   ],
   "headers": [
     {
-      "Header": "Travel",
+      "Header": "Salary",
       "id": 1
     },
     {
-      "Header": "Salary",
+      "Header": "Movie",
       "id": 2
     },
     {
-      "Header": "Movie",
+      "Header": "Travel",
       "id": 3
     },
     {
@@ -141,6 +53,20 @@
     {
       "Header": "Loan",
       "id": 5
+    }
+  ],
+  "bank": [
+    {
+      "bankName": "jk",
+      "holderName": "dee",
+      "accountNumber": "5rytuh",
+      "id": 1
+    },
+    {
+      "bankName": "pnb",
+      "holderName": "werftw",
+      "accountNumber": "erg",
+      "id": 2
     }
   ]
 }

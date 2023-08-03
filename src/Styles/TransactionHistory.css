@@ -13,3 +13,13 @@
 .detail:hover{
   color: gray;
 }
+.my-inp-rec{
+  width: 4vw;
+  font-size: .8rem;
+}
+.my-trans-his-head{
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

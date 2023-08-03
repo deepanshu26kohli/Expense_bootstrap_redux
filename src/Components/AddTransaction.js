@@ -32,6 +32,7 @@ const AddTransaction = (props) => {
                     <label >Amount</label>
                     <input type="number" className="form-control" placeholder="Enter amount" onChange={(event)=>{setAmount(event.target.value)}} />
                 </div>
+                
                 <div className="form-group">
                     <label >Header</label>
 

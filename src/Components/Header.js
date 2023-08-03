@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Styles/Header.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <>
@@ -14,6 +15,7 @@ const Header = () => {
                             
                             <h6 className='text-muted head-content-h6'>Welcome to Expense Manager</h6>
                     </div>
+                    <Link to="/settings">Settings</Link>
                 </div>
             </div>
         </>

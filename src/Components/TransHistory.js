@@ -1,13 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "../Styles/TransactionHistory.css"
-import { useSelector } from 'react-redux'
-const TransHistory = () => {
+import { useDispatch, useSelector } from 'react-redux'
+import { detailAction } from '../Redux/Action/DetailAction'
+const TransHistory = (props) => {
     let Transactionresult = useSelector((state)=>state.transactionData)
-    
+    const dispatch = useDispatch()
+    const [numberOfTrans,setNumberOfTrans] = useState(5)
+    const numRef = useRef()
+    const handleDetail = (event)=>{
+      const id = event.target.dataset.id;
+      console.log("detail comp",id)
+      dispatch(detailAction(id))
+      props.setShowDetail(true)
+    }
+    const handleRec = (e)=>{
+      if (numRef.current.value == ""){
+          setNumberOfTrans(5)
+      } 
+      else{
+        setNumberOfTrans(e.target.value)
+      }
+    }
   return (
     <>
-      <h5>Transaction History</h5>
+    <div className='my-trans-his-head'>
+    <h5>Transaction History </h5>
+    <input className='mb-2 my-inp-rec' ref={numRef} type="number" placeholder='Records' onChange={(e)=>{handleRec(e)}}/>
+    </div>
                         <table className="table">
                             <thead className=''>
                                 <tr>
@@ -20,14 +40,13 @@ const TransHistory = () => {
                             </thead>
                             <tbody>
                                 {
-                                   Transactionresult && Transactionresult.slice(0,5).map((e,id)=>{
+                                   Transactionresult && Transactionresult.slice(0,numberOfTrans).map((e,id)=>{
                                     return <tr key = {id}>
                                     <td>{e.data.Header}</td>
                                     <td>{e.data.Type}</td>
                                     <td>{e.data.Amount}</td>
                                     <td>{e.data.Date}</td>
-                                    <td><Link to="/detail"  className="detail">Detail</Link></td>
-                                    
+                                    <td><Link onClick={handleDetail} className="detail" data-id={e.data.id}>Detail</Link></td>
                                 </tr>
                                    })
                                 }
