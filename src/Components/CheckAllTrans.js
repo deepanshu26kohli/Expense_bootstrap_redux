@@ -4,6 +4,7 @@ import { fetchMoreTransactions } from '../Redux/Action/InfiniteScrollAction';
 import '../Styles/checkalltrans.css'
 const CheckAllTrans = () => {
   const dispatch = useDispatch();
+  const [search,setSearch] = useState("")
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,12 +14,19 @@ const CheckAllTrans = () => {
     if (!loading && hasMore) {
       setLoading(true);
       console.log(currentPage)
-      dispatch(fetchMoreTransactions(currentPage)); 
+      if( search.length == 0 || search.length > 3){
+        dispatch(fetchMoreTransactions(currentPage,search)); 
+      }
+     
       setCurrentPage(prevPage => prevPage + 1);
       setLoading(false);
     }
   };
-
+  useEffect(()=>{
+    if( search.length == 0 || search.length > 3){
+      dispatch(fetchMoreTransactions(currentPage,search)); 
+    }
+  },[search])
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -41,7 +49,8 @@ const CheckAllTrans = () => {
   return (
     <div className='mt-3 container'>
       <h3 className='text-center'>All Transactions</h3>
-      <input type="text" placeholder='Search Transaction' />
+      <div className='d-flex justify-content-center mt-3'><input type="text" placeholder='Search Transaction' onChange={(event)=>{setSearch(event.target.value)}} /></div>
+    
       <div className='row mt-3'>
       {
           transactionData.length ? transactionData[0].data.reverse().map((e, id) => {
