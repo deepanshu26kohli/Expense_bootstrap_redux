@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchMoreTransactions } from '../Redux/Action/InfiniteScrollAction';
 import '../Styles/checkalltrans.css'
 import { debounce } from 'lodash'
+import { Link } from 'react-router-dom';
 const CheckAllTrans = () => {
   const searchRef = useRef()
   const dateRef = useRef()
@@ -60,6 +61,7 @@ const CheckAllTrans = () => {
   };
   return (
     <div className='mt-3 container'>
+      <Link to="/">Back</Link>
       <h3 className='text-center'>All Transactions</h3>
       <div className='d-flex justify-content-around mt-3'>
         <input ref={searchRef} type="text" placeholder='Search Transaction' onChange={handleSearch} />
