@@ -1,102 +1,177 @@
 {
   "transactions": [
     {
-      "Amount": "80000",
-      "Header": "Salary",
+      "Amount": "50000",
+      "Header": "",
       "Type": "Income",
-      "Date": "2023-08-03",
-      "Note": "asdfghjkl",
+      "Date": "2023-08-04",
+      "Note": "pppp",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": null,
       "id": 1
     },
     {
-      "Amount": "500",
-      "Header": "Friend",
+      "Amount": 0,
+      "Header": "",
       "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "yuifvhukgui",
+      "Date": "2023-08-04",
+      "Note": "tuyj",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#rrggbb",
       "id": 2
     },
     {
-      "Amount": "1000",
-      "Header": "Movie",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": "y6ju",
+      "Amount": 0,
+      "Header": "trav",
+      "Type": "Income",
+      "Date": "2023-08-04",
+      "Note": "ertert",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#5fb2ce",
       "id": 3
     },
     {
-      "Amount": "5000",
-      "Header": "Friend",
-      "Type": "Expense",
-      "Date": "2023-08-03",
-      "Note": " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Amount": "3998",
+      "Header": "frnd",
+      "Type": "",
+      "Date": "2023-08-04",
+      "Note": "drgft",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#f49eff",
       "id": 4
+    },
+    {
+      "Amount": "50000",
+      "Header": "Prince",
+      "Type": "Income",
+      "Date": "2023-08-04",
+      "Note": "",
+      "mode": "",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#91a432",
+      "id": 5
+    },
+    {
+      "Amount": "1000",
+      "Header": "trav",
+      "Type": "Expense",
+      "Date": "2023-08-04",
+      "Note": "",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#5fb2ce",
+      "id": 6
+    },
+    {
+      "Amount": "25000",
+      "Header": "uyt",
+      "Type": "Expense",
+      "Date": "2023-08-04",
+      "Note": "qwqewewewq",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#ba7d7d",
+      "id": 7
+    },
+    {
+      "Amount": "5000",
+      "Header": "uyt",
+      "Type": "Expense",
+      "Date": "2023-08-04",
+      "Note": "",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#ba7d7d",
+      "id": 8
+    },
+    {
+      "Amount": "10000",
+      "Header": "uyt",
+      "Type": "Expense",
+      "Date": "2023-08-04",
+      "Note": "yt7u6754w",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#ba7d7d",
+      "id": 9
+    },
+    {
+      "Amount": "5000",
+      "Header": "frnd",
+      "Type": "Expense",
+      "Date": "2023-08-04",
+      "Note": "",
+      "mode": "Cash",
+      "bankName": null,
+      "holderName": null,
+      "accountNumber": null,
+      "Color": "#f49eff",
+      "id": 10
     }
   ],
   "headers": [
     {
       "Header": "Salary",
+      "Color": "#098500",
       "id": 1
     },
     {
       "Header": "Movie",
+      "Color": "#ffb3b3",
       "id": 2
     },
     {
-      "Header": "Travel",
+      "Header": "movie",
+      "Color": "#ff4242",
       "id": 3
     },
     {
-      "Header": "Friend",
+      "Header": "trav",
+      "Color": "#5fb2ce",
       "id": 4
     },
     {
-      "Header": "Loan",
-      "id": 5
-    }
-  ],
-  "bank": [
-    {
-      "bankName": "jk",
-      "holderName": "dee",
-      "accountNumber": "5rytuh",
-      "id": 1
-    },
-    {
-      "bankName": "pnb",
-      "holderName": "werftw",
-      "accountNumber": "erg",
-      "id": 2
-    },
-    {
-      "bankName": "skceif",
-      "holderName": "vwr",
-      "accountNumber": "rvesv",
-      "id": 3
-    },
-    {
-      "bankName": "JK",
-      "holderName": "Deepanshu",
-      "accountNumber": "123456789",
-      "id": 4
-    },
-    {
-      "bankName": "PNB",
-      "holderName": "Rohit",
-      "accountNumber": "987654",
+      "Header": "frnd",
+      "Color": "#f49eff",
       "id": 5
     },
     {
-      "bankName": "uefbbjds",
-      "holderName": "jbjbjbj",
-      "accountNumber": "vcercrew",
+      "Header": "Prince",
+      "Color": "#91a432",
       "id": 6
     },
     {
-      "bankName": "gtnb fb",
-      "holderName": "rbfrgfbgf",
-      "accountNumber": "fgbtrdnrgnty",
+      "Header": "Trip to Goa",
+      "Color": "#ff0000",
       "id": 7
+    },
+    {
+      "Header": "uyt",
+      "Color": "#ba7d7d",
+      "id": 8
     }
-  ]
+  ],
+  "bank": []
 }

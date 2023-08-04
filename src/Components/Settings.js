@@ -10,7 +10,7 @@ const Settings = () => {
             <SettingsAddBank/>
             <SettingsBankList/>
         </div>
-        <Link to="/">Back</Link>
+        <Link to="/">Home</Link>
         </div>
         
     )

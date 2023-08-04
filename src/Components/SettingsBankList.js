@@ -10,12 +10,18 @@ const SettingsBankList = () => {
       <h5>Bank List</h5>
       <hr />
       {
-        result.length && result.map((e, id) => {
+        result.length ? result.map((e, id) => {
           return <div key={id}>
-                 <p>{e.data.bankname}</p>
+            <div><strong>Bank Name: </strong><span>{e.data.bankName}</span></div>
+            <div><strong>Account Holder Name: </strong><span>{e.data.holderName}</span></div>
+            <div><strong>Account Number: </strong><span>{e.data.accountNumber}</span></div>
+            <div className='row'>
+              <div className="col-3"><Link><span>Edit</span></Link></div>
+              <div className="col-3"><Link><span>Delete</span></Link></div>
+            </div>
+            <hr />
           </div>
-
-        })
+        }):"No List Added Yet"
       }
     </div>
   )

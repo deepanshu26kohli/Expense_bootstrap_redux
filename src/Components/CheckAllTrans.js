@@ -61,7 +61,7 @@ const CheckAllTrans = () => {
   };
   return (
     <div className='mt-3 container'>
-      <Link to="/">Back</Link>
+      <Link to="/">Home</Link>
       <h3 className='text-center'>All Transactions</h3>
       <div className='d-flex justify-content-around mt-3'>
         <input ref={searchRef} type="text" placeholder='Search Transaction' onChange={handleSearch} />
@@ -72,12 +72,20 @@ const CheckAllTrans = () => {
       <div className='row mt-3'>
       {
           transactionData.length ? transactionData[0].data.reverse().map((e, id) => {
-            return <div key={id} className='col-md-4 col-12  d-flex flex-column '>
-              <div className='border my-trans-card rounded m-3 p-3 d-flex flex-column align-items-start'>
+            console.log("insidemap",e.Color)
+            let flag
+            if (e.mode == "Add Bank"){
+              flag = true
+            }
+            return <div key={id}   className='col-md-4 col-12  d-flex flex-column '>
+              <div style={{border: `2px solid ${e.Color}`}}  className='rounded my-trans-card  m-3 p-3 d-flex flex-column align-items-start'>
                 <div><strong>Header: </strong><span>{e.Header}</span></div>
                 <div><strong>Amount: </strong><span>₹{e.Amount}</span></div>
                  <div><strong>Type: </strong><span>{e.Type}</span></div>
                  <div><strong>Date: </strong><span>{e.Date}</span></div>
+                {flag && (<><div><strong>Bank Name: </strong><span>{e.bankName}</span></div>
+                 <div><strong>Account Holder: </strong><span>{e.holderName}</span></div>
+                 <div><strong>Account Number: </strong><span>{e.accountNumber}</span></div></>)}
                  <div><strong>Notes: </strong><span>{e.Note}</span></div>
                </div>
              </div> 
