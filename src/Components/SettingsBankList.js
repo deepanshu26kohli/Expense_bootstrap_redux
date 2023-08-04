@@ -10,7 +10,7 @@ const SettingsBankList = () => {
       {
         result.length && result.map((e,id)=>{
           return <div key={id}>
-                 <p>{e.data.bankname}</p>
+                 <p>{e.data.bankName}</p>
           </div>
         })
       }
