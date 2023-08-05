@@ -5,36 +5,26 @@ import { addTransaction } from '../Redux/Action/TransactionAction'
 const AddTransaction = (props) => {
     const bankListResult = useSelector((state) => state.BankData)
     const headerResult = useSelector((state) => state.headerData)
-    
+    // console.log("headerResult",headerResult)
     const dispatch = useDispatch()
     const formref = useRef(null)
     const modeRef = useRef("")
     const [amount, setAmount] = useState(0)
-    const [header, setHeader] = useState("")
-    const [color, setColor] = useState("#rrggbb")
+    const [header, setHeader] = useState(null)
     const [type, setType] = useState("")
     const [mode, setMode] = useState("")
-    const [bankName, setBankName] = useState(null)
-    const [holderName, setHolderName] = useState(null)
-    const [accountNumber, setAccountNumber] = useState(null)
+    const [bank, setBank] = useState(null)
     const [date, setDate] = useState(new Date().toISOString().slice(0, 10))
     const [note, setNote] = useState("")
-    function myHeader(e){
-        const selectedIndex = e.target.selectedIndex
-        setHeader(headerResult[selectedIndex].data.Header)
-        console.log("after selecting",headerResult[selectedIndex].data.Color)
-        setColor(headerResult[selectedIndex].data.Color)
-       
+    function myHeader(e) {
+        setHeader(JSON.parse(e.target.value))
     }
-    function myBank(e){
-        const selectedIndex = e.target.selectedIndex;
-        setBankName(bankListResult[selectedIndex].data.bankName)
-        setHolderName(bankListResult[selectedIndex].data.holderName)
-        setAccountNumber(bankListResult[selectedIndex].data.accountNumber)
+    function myBank(e) {
+        setBank(JSON.parse(e.target.value))
     }
     function submitTransaction(e) {
         e.preventDefault()
-        let newTransaction = { "Amount": amount, "Header": header, "Type": type, "Date": date, "Note": note , "mode" : mode , "bankName" :  bankName , "holderName" : holderName , "accountNumber" : accountNumber , "Color" : color } 
+        let newTransaction = { "Amount": amount, "Header": header, "Type": type, "Date": date, "Note": note, "mode": mode, "bank" : bank  }
         setAmount(0)
         setHeader("")
         setType("")
@@ -60,9 +50,8 @@ const AddTransaction = (props) => {
                     <select className="form-control" onChange={myHeader}>
                         <option value="">Select Header</option>
                         {
-                            headerResult && headerResult.map((e, id) => {
-                                // console.log(e.data.Color)
-                                return <option key={id} value={id}>{e.data.Header}</option>
+                            headerResult && headerResult.map((e,id)=>{
+                                return <option key={id} value={JSON.stringify(e.data)}>{e.data.Header}</option>
                             })
                         }
                     </select>
@@ -83,19 +72,19 @@ const AddTransaction = (props) => {
                     <select ref={modeRef} value={mode} className="form-control" onChange={(event) => { setMode(event.target.value) }} >
                         <option value="">Select Mode</option>
                         <option value="Cash">Cash</option>
-                        <option value="Add Bank">Add Bank</option>
+                        <option value="Add Bank">Bank</option>
                     </select>
                 </div>
                 {
                     modeRef.current.value === "Add Bank" ? <div className="form-group" >
                         <label >Select Bank</label>
-                        <select className="form-control" onChange={myBank} >
+                        <select onChange={myBank} >
                             <option value="">Bank List</option>
-                            {  
-                                bankListResult && bankListResult.map((e,id)=>{
-                                    return <option key={id} value={id}>
-                                        {e.data.bankName}--{e.data.holderName}
-                                        </option>
+                            {
+                                bankListResult && bankListResult.map((e, id) => {
+                                    return <option key={id} value={JSON.stringify(e.data)}>
+                                          {e.data.bankName}--{e.data.holderName}
+                                    </option>
                                 })
                             }
                         </select>

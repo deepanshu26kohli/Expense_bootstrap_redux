@@ -1,177 +1,157 @@
 {
   "transactions": [
     {
-      "Amount": "50000",
-      "Header": "",
+      "Amount": "10000",
+      "Header": {
+        "Header": "Salary",
+        "Color": "#fe3939",
+        "id": 1
+      },
       "Type": "Income",
       "Date": "2023-08-04",
-      "Note": "pppp",
+      "Note": "sd",
       "mode": "Cash",
       "bankName": null,
       "holderName": null,
       "accountNumber": null,
-      "Color": null,
       "id": 1
     },
     {
-      "Amount": 0,
-      "Header": "",
+      "Amount": "2000",
+      "Header": {
+        "Header": "Movie",
+        "Color": "#ffee80",
+        "id": 2
+      },
       "Type": "Expense",
       "Date": "2023-08-04",
-      "Note": "tuyj",
-      "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#rrggbb",
+      "Note": "Movie",
+      "mode": "Add Bank",
+      "bank": {
+        "bankName": "PNB",
+        "holderName": "Rohit",
+        "accountNumber": "987654",
+        "id": 2
+      },
       "id": 2
     },
     {
-      "Amount": 0,
-      "Header": "trav",
+      "Amount": "80000",
+      "Header": {
+        "Header": "Salary",
+        "Color": "#fe3939",
+        "id": 1
+      },
       "Type": "Income",
       "Date": "2023-08-04",
-      "Note": "ertert",
+      "Note": "qwerty",
       "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#5fb2ce",
+      "bank": null,
       "id": 3
     },
     {
-      "Amount": "3998",
-      "Header": "frnd",
-      "Type": "",
+      "Amount": "5000",
+      "Header": {
+        "Header": "Travel",
+        "Color": "#b800eb",
+        "id": 3
+      },
+      "Type": "Expense",
       "Date": "2023-08-04",
-      "Note": "drgft",
+      "Note": "weg",
       "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#f49eff",
+      "bank": null,
       "id": 4
     },
     {
-      "Amount": "50000",
-      "Header": "Prince",
-      "Type": "Income",
-      "Date": "2023-08-04",
-      "Note": "",
-      "mode": "",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#91a432",
+      "Amount": "40000",
+      "Header": {
+        "Header": "Travel",
+        "Color": "#b800eb",
+        "id": 3
+      },
+      "Type": "Expense",
+      "Date": "2023-08-04T18:28:42.124Z",
+      "Note": "rv d",
+      "mode": "Cash",
+      "bank": null,
       "id": 5
     },
     {
-      "Amount": "1000",
-      "Header": "trav",
+      "Amount": "2000",
+      "Header": {
+        "Header": "Gym",
+        "Color": "#ff941a",
+        "id": 4
+      },
       "Type": "Expense",
       "Date": "2023-08-04",
-      "Note": "",
+      "Note": "gym",
       "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#5fb2ce",
+      "bank": null,
       "id": 6
     },
     {
-      "Amount": "25000",
-      "Header": "uyt",
+      "Amount": "30000",
+      "Header": {
+        "Header": "Travel",
+        "Color": "#b800eb",
+        "id": 3
+      },
       "Type": "Expense",
       "Date": "2023-08-04",
-      "Note": "qwqewewewq",
+      "Note": "trip to maldives",
       "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#ba7d7d",
+      "bank": null,
       "id": 7
-    },
-    {
-      "Amount": "5000",
-      "Header": "uyt",
-      "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "",
-      "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#ba7d7d",
-      "id": 8
-    },
-    {
-      "Amount": "10000",
-      "Header": "uyt",
-      "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "yt7u6754w",
-      "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#ba7d7d",
-      "id": 9
-    },
-    {
-      "Amount": "5000",
-      "Header": "frnd",
-      "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "",
-      "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
-      "Color": "#f49eff",
-      "id": 10
     }
   ],
   "headers": [
     {
       "Header": "Salary",
-      "Color": "#098500",
+      "Color": "#fe3939",
       "id": 1
     },
     {
       "Header": "Movie",
-      "Color": "#ffb3b3",
+      "Color": "#ffee80",
       "id": 2
     },
     {
-      "Header": "movie",
-      "Color": "#ff4242",
+      "Header": "Travel",
+      "Color": "#b800eb",
       "id": 3
     },
     {
-      "Header": "trav",
-      "Color": "#5fb2ce",
+      "Header": "Gym",
+      "Color": "#ff941a",
       "id": 4
-    },
-    {
-      "Header": "frnd",
-      "Color": "#f49eff",
-      "id": 5
-    },
-    {
-      "Header": "Prince",
-      "Color": "#91a432",
-      "id": 6
-    },
-    {
-      "Header": "Trip to Goa",
-      "Color": "#ff0000",
-      "id": 7
-    },
-    {
-      "Header": "uyt",
-      "Color": "#ba7d7d",
-      "id": 8
     }
   ],
-  "bank": []
+  "bank": [
+    {
+      "bankName": "abc",
+      "holderName": "xyz",
+      "accountNumber": "123",
+      "id": 1
+    },
+    {
+      "bankName": "J&K",
+      "holderName": "Deepanshu",
+      "accountNumber": "1234",
+      "id": 2
+    },
+    {
+      "bankName": "PNB",
+      "holderName": "Rohit",
+      "accountNumber": "4321",
+      "id": 3
+    },
+    {
+      "bankName": "Jk",
+      "holderName": "abc",
+      "accountNumber": "123",
+      "id": 4
+    }
+  ]
 }

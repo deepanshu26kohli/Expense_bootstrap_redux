@@ -18,12 +18,25 @@ const App = () => {
   return (
     <>
       <div className='container'>
-      <Header />
-      <Banner />
-      <Routes>
+        <Header/>
+        <Banner/>
+      <Routes> 
+        <Route path="/" element={<div className="row mt-3 container justify-content-between">
+              <div className="col-12 col-md-4 col-lg-3 h-50 d-flex flex-column justify-content-center align-items-center border rounded p-3">
+                {  showDetail ? <Detail showDetail={showDetail} setShowDetail={setShowDetail}/> : <AddTransaction
+                  headerModal={headerModal}
+                  setHeaderModal={setHeaderModal}
+                />}
+              </div>
+              <div className="col-12 col-md-8 col-lg-6 h-25 d-flex d-flex flex-column align-items-center border rounded py-3">
+                <TransHistory showDetail={showDetail} setShowDetail={setShowDetail} />
+                
+              </div>
+            </div>}/>
+      
         <Route path="/alltransactions" element={<CheckAllTrans />} />
         <Route path = "/settings" element={<Settings/>}/>
-        <Route
+        {/* <Route
           path="/"
           element={
             <div className="row mt-3 container justify-content-between">
@@ -39,7 +52,7 @@ const App = () => {
               </div>
             </div>
           }
-        />
+        /> */}
       </Routes>
       {headerModal && (
         <HeaderModal headerModal={headerModal} setHeaderModal={setHeaderModal} />

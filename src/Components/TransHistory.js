@@ -42,7 +42,7 @@ const TransHistory = (props) => {
                                 {
                                    Transactionresult && Transactionresult.slice(0,numberOfTrans).map((e,id)=>{
                                     return <tr key = {id}>
-                                    <td>{e.data.Header}</td>
+                                    <td>{e.data.Header.Header}</td>
                                     <td>{e.data.Type}</td>
                                     <td>{e.data.Amount}</td>
                                     <td>{e.data.Date}</td>

@@ -5,13 +5,13 @@ import { addHeader } from '../Redux/Action/HeaderAction';
 const HeaderModal = (props) => {
     const formref = useRef(null)
     const [header, setHeader] = useState("")
-    const [color,setColor] = useState("#rrggbb")
+    const [color,setColor] = useState("#000000")
     const dispatch = useDispatch()
     function submitHeader(e) {
         e.preventDefault()
         let newHeader = {"Header":header , "Color":color}
-        setHeader("")
-        setColor("#rrggbb")
+        setHeader("") 
+        setColor("000000")
         dispatch(addHeader(newHeader))
         formref.current.reset();
         alert("Header Added Successfully")
@@ -31,5 +31,4 @@ const HeaderModal = (props) => {
         </div>
     )
 }
-
 export default HeaderModal

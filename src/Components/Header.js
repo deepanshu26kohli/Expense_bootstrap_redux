@@ -7,7 +7,7 @@ const Header = () => {
             <div className='pt-3  container'>
                 <div className="row  justify-content-between d-flex flex-row">
                     <div className="col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6  d-flex align-items-center justify-content-start">
-                        <h2 className='logo'>ExpenseManager</h2>
+                        <Link to="/"><h2 className='logo'>ExpenseManager</h2></Link>
                     </div>
                     <div className="col-6 col-lg-3 col-md-4 col-sm-4 col-xs-6   d-flex flex-column align-items-center justify-content-end">
                    

@@ -1,10 +1,21 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import "../Styles/SettingsBankList.css"
-const SettingsBankList = () => {
+import { deleteBankAction } from '../Redux/Action/DeleteBankAction'
+import { getDataToEditAction } from '../Redux/Action/GetDataToEditAction'
+const SettingsBankList = (props) => {
+  const dispatch = useDispatch()
   const result = useSelector((state) => state.BankData)
-  console.log("bankListComp", result)
+  const getDataToEdit = (e) =>{
+    props.showEdit(true)
+    // console.log("getDatatoEdit", e.target.dataset.id)
+    dispatch(getDataToEditAction(e.target.dataset.id))
+  }
+  const handleBankDelete = (e) =>{
+        // console.log("deleteBankId", e.target.dataset.id)
+        dispatch(deleteBankAction(e.target.dataset.id))
+  }
   return (
     <div className='col-5 px-3  py-3 rounded border bank-list'>
       <h5>Bank List</h5>
@@ -16,12 +27,12 @@ const SettingsBankList = () => {
             <div><strong>Account Holder Name: </strong><span>{e.data.holderName}</span></div>
             <div><strong>Account Number: </strong><span>{e.data.accountNumber}</span></div>
             <div className='row'>
-              <div className="col-3"><Link><span>Edit</span></Link></div>
-              <div className="col-3"><Link><span>Delete</span></Link></div>
+              <div className="col-3"><Link data-id={e.data.id} onClick={getDataToEdit}>Edit</Link></div>
+              <div className="col-3"><Link data-id={e.data.id} onClick={handleBankDelete}>Delete</Link></div>
             </div>
             <hr />
           </div>
-        }):"No List Added Yet"
+        }):"Not Added Yet"
       }
     </div>
   )
