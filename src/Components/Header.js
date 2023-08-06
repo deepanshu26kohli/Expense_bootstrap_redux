@@ -3,22 +3,19 @@ import '../Styles/Header.css'
 import { Link } from 'react-router-dom'
 const Header = () => {
     return (
-        <>
-            <div className='pt-3  container'>
-                <div className="row  justify-content-between d-flex flex-row">
-                    <div className="col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6  d-flex align-items-center justify-content-start">
-                        <Link to="/"><h2 className='logo'>ExpenseManager</h2></Link>
+            <div className='container'>
+                <div className="row  justify-content-between ">
+                    <div className="col-md-5 col-12   d-flex align-items-center justify-content-start">
+                        <Link className='logo' to="/"><h2 >ExpenseManager</h2></Link>
                     </div>
-                    <div className="col-6 col-lg-3 col-md-4 col-sm-4 col-xs-6   d-flex flex-column align-items-center justify-content-end">
-                   
+                    <div className="col-md-5 col-12   d-flex flex-column align-items-md-end align-items-start  ">
                             <h4 className='head-content'>Hi,User!</h4>
-                            
                             <h6 className='text-muted head-content-h6'>Welcome to Expense Manager</h6>
+                            <Link to="/settings"><button className='btn-sm btn-dark'>Settings</button></Link>
                     </div>
-                    <Link to="/settings">Settings</Link>
                 </div>
             </div>
-        </>
+        
     )
 }
 

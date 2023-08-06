@@ -32,7 +32,7 @@ const CheckAllTrans = () => {
     setScrollTop(document.documentElement.scrollTop);
 
     
-    if (scrollTop >= totalHeight - innerHeight - 30) {
+    if (scrollTop >= totalHeight - innerHeight - 10) {
       setSLiceUpto(sliceUpto + 3); 
     }
   };
@@ -68,7 +68,7 @@ const CheckAllTrans = () => {
       <div className='row mt-3'>
         {x?<>  {
           transactionData.length ? transactionData[0].data.reverse().map((e, id) => {
-            console.log("insidemap",e.Color)
+            // console.log("insidemap",e.Color)
             let flag
             if (e.mode == "Add Bank"){
               flag = true
@@ -82,7 +82,7 @@ const CheckAllTrans = () => {
                 {flag && (<><div><strong style={{color: `${e.Header.Color}`}}>Bank Name: </strong><span>{e.bank.bankName}</span></div>
                  <div><strong style={{color: `${e.Header.Color}`}}>Account Holder: </strong><span>{e.bank.holderName}</span></div>
                  <div><strong style={{color: `${e.Header.Color}`}}>Account Number: </strong><span>{e.bank.accountNumber}</span></div></>)}
-                 <div><strong>Notes: </strong><span>{e.Note}</span></div>
+                 <div><strong>Notes: </strong><i>{e.Note}</i></div>
                </div>
              </div> 
            }): <p>No Transactions to show</p>
@@ -94,15 +94,15 @@ const CheckAllTrans = () => {
             }
             return <div key={id} className='col-md-4 col-12  d-flex flex-column '>
               <div className='rounded my-trans-card  m-3 p-3 d-flex flex-column align-items-start'>
-                <div><strong style={{ color: `${e.data.Header.Color}` }}>Header: </strong><span>{e.data.Header.Header}</span></div>
-                <div><strong style={{ color: `${e.data.Header.Color}` }}>Amount: </strong><span>₹{e.data.Amount}</span></div>
-                <div><strong style={{ color: `${e.data.Header.Color}` }}>Type: </strong><span>{e.data.Type}</span></div>
-                <div><strong style={{ color: `${e.data.Header.Color}` }}>Date: </strong><span>{e.data.Date}</span></div>
-                <div><strong style={{ color: `${e.data.Header.Color}` }}>Mode: </strong><span>{e.data.mode}</span></div>
+                <div><strong style={{ color: `${e.Header.Color}` }}>Header: </strong><span>{e.Header.Header}</span></div>
+                <div><strong style={{ color: `${e.Header.Color}` }}>Amount: </strong><span>₹{e.Amount}</span></div>
+                <div><strong style={{ color: `${e.Header.Color}` }}>Type: </strong><span>{e.Type}</span></div>
+                <div><strong style={{ color: `${e.Header.Color}` }}>Date: </strong><span>{e.Date}</span></div>
+                <div><strong style={{ color: `${e.Header.Color}` }}>Mode: </strong><span>{e.mode}</span></div>
                 {flag && (<><div><strong style={{ color: `${e.Header.Color}` }}>Bank Name: </strong><span>{e.data.bank.bankName}</span></div>
-                  <div><strong style={{ color: `${e.data.Header.Color}` }}>Account Holder: </strong><span>{e.data.bank.holderName}</span></div>
-                  <div><strong style={{ color: `${e.data.Header.Color}` }}>Account Number: </strong><span>{e.data.bank.accountNumber}</span></div></>)}
-                <div><strong style={{ color: `${e.data.Header.Color}` }}>Notes: </strong><span>{e.data.Note}</span></div>
+                  <div><strong style={{ color: `${e.Header.Color}` }}>Account Holder: </strong><span>{e.bank.holderName}</span></div>
+                  <div><strong style={{ color: `${e.Header.Color}` }}>Account Number: </strong><span>{e.bank.accountNumber}</span></div></>)}
+                <div><strong style={{ color: `${e.Header.Color}` }}>Notes: </strong><i>{e.Note}</i></div>
               </div>
             </div>
           }) : <p>No Transactions to show</p>

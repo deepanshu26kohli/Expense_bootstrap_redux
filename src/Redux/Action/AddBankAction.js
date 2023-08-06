@@ -5,3 +5,8 @@ export function addbank(data){
         data : data
     }
 }
+export function fetchBankData(){
+    return {
+        type : "FETCH_JSON_BANK",
+    }
+}

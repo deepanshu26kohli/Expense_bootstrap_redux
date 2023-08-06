@@ -1,12 +1,14 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "../Styles/HeaderModal.css"
 import { useDispatch } from 'react-redux';
-import { addHeader } from '../Redux/Action/HeaderAction';
+import { addHeader,fetchedHeaderData } from '../Redux/Action/HeaderAction';
+import axios from 'axios';
 const HeaderModal = (props) => {
+    const dispatch = useDispatch()
     const formref = useRef(null)
     const [header, setHeader] = useState("")
     const [color,setColor] = useState("#000000")
-    const dispatch = useDispatch()
+    
     function submitHeader(e) {
         e.preventDefault()
         let newHeader = {"Header":header , "Color":color}

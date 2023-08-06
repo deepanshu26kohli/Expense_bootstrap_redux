@@ -1,6 +1,4 @@
-/* .banner{
-    background-color: bisque;
-} */
+
 .box-bal{
     background-color:rgb(212 235 189);
     border: .1rem solid green;
@@ -13,10 +11,10 @@
     background-color: rgb(255 184 184);
      border: .1rem solid red;
 }
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     .text {
       font-size: 1rem;
       padding: 0rem;
     }
     
-  }
+  } */

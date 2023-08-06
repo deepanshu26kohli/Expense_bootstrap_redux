@@ -5,3 +5,9 @@ export const addHeader = (data)=>{
          data : data
     }
 }
+export const fetchedHeaderData = ()=>{
+    // console.log(data)
+    return {
+        type : 'FETCH_HEADER_JSON'
+    }
+}

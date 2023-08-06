@@ -23,13 +23,13 @@ const SettingsBankList = (props) => {
       {
         result.length ? result.map((e, id) => {
           return <div key={id}>
-            <div><strong>Bank Name: </strong><span>{e.data.bankName}</span></div>
-            <div><strong>Account Holder Name: </strong><span>{e.data.holderName}</span></div>
-            <div><strong>Account Number: </strong><span>{e.data.accountNumber}</span></div>
-            <div className='row'>
+            <div><strong>Bank Name: </strong><span>{e.bankName}</span></div>
+            <div><strong>Account Holder Name: </strong><span>{e.holderName}</span></div>
+            <div><strong>Account Number: </strong><span>{e.accountNumber}</span></div>
+            {/* <div className='row'>
               <div className="col-3"><Link data-id={e.data.id} onClick={getDataToEdit}>Edit</Link></div>
               <div className="col-3"><Link data-id={e.data.id} onClick={handleBankDelete}>Delete</Link></div>
-            </div>
+            </div> */}
             <hr />
           </div>
         }):"Not Added Yet"

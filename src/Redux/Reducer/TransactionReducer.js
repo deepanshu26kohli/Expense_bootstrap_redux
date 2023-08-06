@@ -3,6 +3,8 @@ export function transactionData(state = [], action) {
     switch (action.type) {
         case 'TRANSACTION_SUCCESS':
             return [action.data,...state] 
+        case 'TRANSACTION_JSON_SUCCESS':
+            return action.data.reverse()
         default:
             return state
     }

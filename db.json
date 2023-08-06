@@ -1,78 +1,71 @@
 {
   "transactions": [
     {
-      "Amount": "10000",
+      "Amount": "50000",
       "Header": {
         "Header": "Salary",
-        "Color": "#fe3939",
+        "Color": "#108a00",
         "id": 1
       },
       "Type": "Income",
-      "Date": "2023-08-04",
-      "Note": "sd",
+      "Date": "2023-08-05",
+      "Note": "",
       "mode": "Cash",
-      "bankName": null,
-      "holderName": null,
-      "accountNumber": null,
+      "bank": null,
       "id": 1
     },
     {
       "Amount": "2000",
       "Header": {
         "Header": "Movie",
-        "Color": "#ffee80",
+        "Color": "#ff0a0a",
         "id": 2
       },
       "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "Movie",
-      "mode": "Add Bank",
-      "bank": {
-        "bankName": "PNB",
-        "holderName": "Rohit",
-        "accountNumber": "987654",
-        "id": 2
-      },
-      "id": 2
-    },
-    {
-      "Amount": "80000",
-      "Header": {
-        "Header": "Salary",
-        "Color": "#fe3939",
-        "id": 1
-      },
-      "Type": "Income",
-      "Date": "2023-08-04",
-      "Note": "qwerty",
+      "Date": "2023-08-06",
+      "Note": "sdfsf",
       "mode": "Cash",
       "bank": null,
-      "id": 3
+      "id": 2
     },
     {
       "Amount": "5000",
       "Header": {
         "Header": "Travel",
-        "Color": "#b800eb",
-        "id": 3
+        "Color": "#dbd400",
+        "id": 7
       },
       "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "weg",
+      "Date": "2023-08-06",
+      "Note": "rthryhr",
+      "mode": "Cash",
+      "bank": null,
+      "id": 3
+    },
+    {
+      "Amount": "1000",
+      "Header": {
+        "Header": "Movie",
+        "Color": "#ff0a0a",
+        "id": 2
+      },
+      "Type": "Expense",
+      "Date": "2023-08-06",
+      "Note": "dfewfcws",
       "mode": "Cash",
       "bank": null,
       "id": 4
     },
     {
-      "Amount": "40000",
+      "Amount": "1200",
       "Header": {
-        "Header": "Travel",
-        "Color": "#b800eb",
-        "id": 3
+        "Header": "Guneet",
+        "Color": "#ff2424",
+        "id": 15
       },
       "Type": "Expense",
-      "Date": "2023-08-04T18:28:42.124Z",
-      "Note": "rv d",
+      "Date": "2023-08-06",
+      "Note": "dvsvs",
       "mode": "Cash",
       "bank": null,
       "id": 5
@@ -80,78 +73,169 @@
     {
       "Amount": "2000",
       "Header": {
-        "Header": "Gym",
-        "Color": "#ff941a",
-        "id": 4
+        "Header": "Guneet",
+        "Color": "#ff2424",
+        "id": 15
       },
       "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "gym",
+      "Date": "2023-08-06",
+      "Note": "sgdfgd",
       "mode": "Cash",
       "bank": null,
       "id": 6
     },
     {
-      "Amount": "30000",
+      "Amount": "1200",
       "Header": {
-        "Header": "Travel",
-        "Color": "#b800eb",
-        "id": 3
+        "Header": "Friend",
+        "Color": "#1623df",
+        "id": 8
       },
       "Type": "Expense",
-      "Date": "2023-08-04",
-      "Note": "trip to maldives",
+      "Date": "2023-08-06",
+      "Note": "weewweew",
       "mode": "Cash",
       "bank": null,
       "id": 7
+    },
+    {
+      "Amount": "1000",
+      "Header": {
+        "Header": "deepanshu",
+        "Color": "#7e3a3a",
+        "id": 14
+      },
+      "Type": "Expense",
+      "Date": "2023-08-06",
+      "Note": "Not Added By User",
+      "mode": "Cash",
+      "bank": null,
+      "id": 8
+    },
+    {
+      "Amount": "11000",
+      "Header": {
+        "Header": "Travel",
+        "Color": "#dbd400",
+        "id": 7
+      },
+      "Type": "Expense",
+      "Date": "2023-08-06",
+      "Note": "Not Added By User",
+      "mode": "Cash",
+      "bank": null,
+      "id": 9
+    },
+    {
+      "Amount": "10000",
+      "Header": {
+        "Header": "Salary",
+        "Color": "#108a00",
+        "id": 1
+      },
+      "Type": "Income",
+      "Date": "2023-08-06T12:55:27.054Z",
+      "Note": "",
+      "mode": "Cash",
+      "bank": null,
+      "id": 10
     }
   ],
   "headers": [
     {
       "Header": "Salary",
-      "Color": "#fe3939",
+      "Color": "#108a00",
       "id": 1
     },
     {
       "Header": "Movie",
-      "Color": "#ffee80",
+      "Color": "#ff0a0a",
       "id": 2
     },
     {
-      "Header": "Travel",
-      "Color": "#b800eb",
+      "Header": "Movie",
+      "Color": "#648000",
       "id": 3
     },
     {
-      "Header": "Gym",
-      "Color": "#ff941a",
+      "Header": "Salary",
+      "Color": "#ff3838",
       "id": 4
+    },
+    {
+      "Header": "Salary",
+      "Color": "#fe2020",
+      "id": 5
+    },
+    {
+      "Header": "Movie",
+      "Color": "#ff7300",
+      "id": 6
+    },
+    {
+      "Header": "Travel",
+      "Color": "#dbd400",
+      "id": 7
+    },
+    {
+      "Header": "Friend",
+      "Color": "#1623df",
+      "id": 8
+    },
+    {
+      "Header": "Salary",
+      "Color": "#ff0000",
+      "id": 9
+    },
+    {
+      "Header": "jkl",
+      "Color": "#eb2d2d",
+      "id": 10
+    },
+    {
+      "Header": "salary",
+      "Color": "#000000",
+      "id": 11
+    },
+    {
+      "Header": "rohit",
+      "Color": "#ff4242",
+      "id": 12
+    },
+    {
+      "Header": "Sahil",
+      "Color": "#f97676",
+      "id": 13
+    },
+    {
+      "Header": "deepanshu",
+      "Color": "#7e3a3a",
+      "id": 14
+    },
+    {
+      "Header": "Guneet",
+      "Color": "#ff2424",
+      "id": 15
     }
   ],
   "bank": [
     {
-      "bankName": "abc",
-      "holderName": "xyz",
-      "accountNumber": "123",
+      "bankName": "Jk",
+      "holderName": "Deepanshu",
+      "accountNumber": "12345",
       "id": 1
     },
     {
-      "bankName": "J&K",
-      "holderName": "Deepanshu",
-      "accountNumber": "1234",
+      "bankName": "PNB",
+      "holderName": "Kohli",
+      "accountNumber": "4321",
       "id": 2
     },
     {
-      "bankName": "PNB",
+      "bankName": "SBI",
       "holderName": "Rohit",
-      "accountNumber": "4321",
+      "accountNumber": "123456",
       "id": 3
-    },
-    {
-      "bankName": "Jk",
-      "holderName": "abc",
-      "accountNumber": "123",
-      "id": 4
     }
   ]
 }
