@@ -6,15 +6,16 @@ import EditBank from './EditBank'
 const Settings = () => {
     const [edit,showEdit] = useState(false)
     return (
-        <div>
-        <div className='row  p-3 justify-content-between'>
-            {edit?<EditBank showEdit = {showEdit}/>:
-            <SettingsAddBank/>}
+        <>
+            {edit?<div className="container">
+                <EditBank showEdit = {showEdit}/>
+            </div>:<div className="container">
+                <SettingsAddBank/>
+            </div>}
+            <div className="container ">
             <SettingsBankList showEdit = {showEdit}/>
-        </div>
-        
-        </div>
-        
+            </div>
+        </>
     )
 }
 export default Settings

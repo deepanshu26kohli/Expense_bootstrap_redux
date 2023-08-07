@@ -139,6 +139,25 @@
       "mode": "Cash",
       "bank": null,
       "id": 10
+    },
+    {
+      "Amount": "10000",
+      "Header": {
+        "Header": "Trip to Goa",
+        "Color": "#eb00d7",
+        "id": 16
+      },
+      "Type": "Expense",
+      "Date": "2023-08-07",
+      "Note": "Trip to goa ",
+      "mode": "Add Bank",
+      "bank": {
+        "bankName": "Jk",
+        "holderName": "Deepanshu",
+        "accountNumber": "12345",
+        "id": 1
+      },
+      "id": 11
     }
   ],
   "headers": [
@@ -216,6 +235,11 @@
       "Header": "Guneet",
       "Color": "#ff2424",
       "id": 15
+    },
+    {
+      "Header": "Trip to Goa",
+      "Color": "#eb00d7",
+      "id": 16
     }
   ],
   "bank": [

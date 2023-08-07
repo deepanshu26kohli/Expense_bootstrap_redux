@@ -1,3 +1,4 @@
-.mydetail-box{
-    width: 15vw;
-}
+ .mydetail-box{
+    height: 40vh;
+    overflow-y: auto;
+} 

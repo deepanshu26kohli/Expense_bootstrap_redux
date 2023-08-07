@@ -99,7 +99,7 @@ const CheckAllTrans = () => {
                 <div><strong style={{ color: `${e.Header.Color}` }}>Type: </strong><span>{e.Type}</span></div>
                 <div><strong style={{ color: `${e.Header.Color}` }}>Date: </strong><span>{e.Date}</span></div>
                 <div><strong style={{ color: `${e.Header.Color}` }}>Mode: </strong><span>{e.mode}</span></div>
-                {flag && (<><div><strong style={{ color: `${e.Header.Color}` }}>Bank Name: </strong><span>{e.data.bank.bankName}</span></div>
+                {flag && (<><div><strong style={{ color: `${e.Header.Color}` }}>Bank Name: </strong><span>{e.bank.bankName}</span></div>
                   <div><strong style={{ color: `${e.Header.Color}` }}>Account Holder: </strong><span>{e.bank.holderName}</span></div>
                   <div><strong style={{ color: `${e.Header.Color}` }}>Account Number: </strong><span>{e.bank.accountNumber}</span></div></>)}
                 <div><strong style={{ color: `${e.Header.Color}` }}>Notes: </strong><i>{e.Note}</i></div>

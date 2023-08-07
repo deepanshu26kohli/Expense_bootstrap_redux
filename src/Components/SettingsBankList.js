@@ -17,12 +17,16 @@ const SettingsBankList = (props) => {
         dispatch(deleteBankAction(e.target.dataset.id))
   }
   return (
-    <div className='col-5 px-3  py-3 rounded border bank-list'>
+    <div className='row  p-1 mt-3 mx-md-0 mb-3 mx-1 bank-list  border rounded'>
+      <div className="col-12 mt-1">
       <h5>Bank List</h5>
       <hr />
+      </div>
+      
+     
       {
         result.length ? result.map((e, id) => {
-          return <div key={id}>
+          return <div className='col-12 ' key={id}>
             <div><strong>Bank Name: </strong><span>{e.bankName}</span></div>
             <div><strong>Account Holder Name: </strong><span>{e.holderName}</span></div>
             <div><strong>Account Number: </strong><span>{e.accountNumber}</span></div>
