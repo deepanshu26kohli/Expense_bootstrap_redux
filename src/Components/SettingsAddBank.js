@@ -24,15 +24,15 @@ const SettingsAddBank = () => {
       </div>
       <form ref={formRef} className='col-12 mt-2 row d-flex justify-content-between' onSubmit={add_bank}>
         <div className="col-md-6">
-          <label>Bank Name:</label>
+          <label>Bank Name  :  </label>
           <input type="text" placeholder='Bank Name' className='pl-2' onChange={(e) => { setBankName(e.target.value) }} />
         </div>
         <div className="col-md-6">
-          <label >Account Holder Name:</label>
+          <label >Account Holder Name  :  </label>
           <input type="text" placeholder='Account Holder Name' className=' pl-2' onChange={(e) => { setHolderName(e.target.value) }} />
         </div>
         <div className="col-md-6">
-        <label >Account Number:</label>
+        <label >Account Number  :  </label>
         <input type="text" placeholder='Account Number' className='pl-2' onChange={(e) => { setAccountNumber(e.target.value) }} />
         </div>
         <div className="col-12 my-2">

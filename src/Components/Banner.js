@@ -32,26 +32,26 @@ const Banner = () => {
     return (
         <>
             <div className="container banner mt-3">
-                <div className="row  d-flex justify-content-md-between justify-content-center  ">
-                    <div className="col-md-3 m-md-0 my-2 box-bal  col-11  d-flex align-items-center   rounded">
-                        <i class="fa-solid fa-wallet fa-2xl mr-3" style={{ color: "#199719",fontSize:"3.3rem" }}/>
+                <div className="row  d-flex justify-content-md-between justify-content-around ">
+                    <div className="col-md-3 m-md-0 my-2 box-bal  col-3  d-flex align-items-center   rounded">
+                        <i class="icon fa-solid fa-wallet fa-2xl mr-3" style={{ color: "#199719" }}/>
                         <div >
-                            <h5 >Balance</h5>
-                            <h5>₹{bal}</h5>
+                            <h5 className='box-text'>Balance</h5>
+                            <h5 className='box-text'>₹{bal}</h5>
                         </div>
                     </div>
-                    <div className=" col-md-3 m-md-0 my-2 box-inc  col-11 d-flex align-items-center rounded">
-                    <i class="fa-solid fa-arrow-trend-up mr-3" style={{ color: "#00aaff",fontSize:"3.3rem" }}/>
+                    <div className=" col-md-3 m-md-0 my-2 box-inc  col-3 d-flex align-items-center rounded">
+                    <i class="icon fa-solid fa-arrow-trend-up mr-3" style={{ color: "#00aaff"}}/>
                             <div>
-                                <h5>Income</h5>
-                                <h5>₹{inc}</h5>
+                                <h5 className='box-text'>Income</h5>
+                                <h5 className='box-text'>₹{inc}</h5>
                             </div>    
                     </div>
-                    <div className=" col-md-3 m-md-0 my-2 box-exp col-11 d-flex align-items-center rounded">
-                    <i class="fa-solid fa-arrow-trend-down mr-3" style={{ color: "red",fontSize:"3.3rem" }}/>
+                    <div className=" col-md-3 m-md-0 my-2 box-exp col-3 d-flex align-items-center rounded">
+                    <i class="icon fa-solid fa-arrow-trend-down mr-3" style={{ color: "red" }}/>
                             <div>
-                                <h5>Expense</h5>
-                                <h5>₹{exp}</h5>
+                                <h5 className='box-text'>Expense</h5>
+                                <h5 className='box-text'>₹{exp}</h5>
                             </div>    
                     </div>
                 </div>

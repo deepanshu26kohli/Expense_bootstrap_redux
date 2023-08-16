@@ -11,11 +11,10 @@ const Header = () => {
                     <div className="col-md-5 col-12   d-flex flex-column align-items-md-end align-items-start  ">
                             <h4 className='head-content'>Hi,User!</h4>
                             <h6 className='text-muted head-content-h6'>Welcome to Expense Manager</h6>
-                            <Link to="/settings"><button className='btn-sm btn-dark'>Settings</button></Link>
+                            <Link to="/settings"><i style={{color:"black"}} class="fa-solid fa-2x fa-gear"></i></Link>
                     </div>
                 </div>
             </div>
-        
     )
 }
 
